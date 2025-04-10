@@ -1,0 +1,13 @@
+let map = L.map('map');
+
+map.setView([51.505, -0.09], 13)
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+let marker = L.marker([51.52, -0.09]).addTo(map);
+
+const response = await fetch("https://geo.ipify.org/api/v2/country,city?apiKey=YOUR_API_KEY&ipAddress=8.8.8.8")
+
