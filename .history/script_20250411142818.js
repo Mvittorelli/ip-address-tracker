@@ -9,8 +9,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let marker = L.marker([51.52, -0.09]).addTo(map);
 
-const response = await fetch("https://geo.ipify.org/api/v2/country,city?apiKey=YOUR_API_KEY&ipAddress=8.8.8.8")
-const data = await response.json();
-
-console.log(data) 
+// x
  
