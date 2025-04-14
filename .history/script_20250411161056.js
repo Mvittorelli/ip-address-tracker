@@ -19,7 +19,6 @@ searchBtn.addEventListener("click", async function (e) {
     console.log(data)
 
     map.setView([data.location.lat, data.location.lng], 7)
-    marker.remove()
     marker = L.marker([data.location.lat, data.location.lng]).addTo(map);
 
 

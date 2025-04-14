@@ -1,0 +1,13 @@
+function idk(nb) {
+    let price = 0
+    if (nb <= 10) {
+        price = nb * 0.1
+        return price
+    } else if (nb > 10 && nb <= 30) {
+        price = 
+    }
+}
+
+alert(idk(
+    prompt("paper please")
+));
